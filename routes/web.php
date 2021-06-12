@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/buku0124', 'BukuController@index');
+Route::get('/buku0124/export_excel', 'BukuController@export_excel');
