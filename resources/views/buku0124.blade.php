@@ -8,7 +8,7 @@
 
 	<div class="container">
 		
-		<a href="/buku/export_excel" class="btn btn-success my-3" target="_blank">EXPORT EXCEL</a>
+		<a href="/buku0124/export_excel" class="btn btn-warning my-3" target="_blank">Export ke Excel</a>
 		
 		<table class='table table-bordered'>
 			<thead>
@@ -17,21 +17,28 @@
 					<th>ID</th>
 					<th>Judul Buku</th>
 					<th>Tahun Terbit</th>
+					<th>Jenis</th>
 				</tr>
 			</thead>
 			<tbody>
 				@php $i=1 @endphp
-				@foreach($buku as $b)
+				@foreach($buku as $buku)
 				<tr>
 					<td>{{ $i++ }}</td>
-					<td>{{$b->id}}</td>
-					<td>{{$b->judul}}</td>
-					<td>{{$b->tahun_terbit}}</td>
+					<td>{{$buku->id}}</td>
+					<td>{{$buku->judul}}</td>
+					<td>{{$buku->tahun_terbit}}</td>
+					<td>{{$buku->jenis}}</td>
 				</tr>
 				@endforeach
 			</tbody>
 		</table>
 	</div>
 
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">&#169 <script>document.write(new Date().getFullYear())</script> 1461900124 Hanif</span>
+  </div>
+</footer>
 </body>
 </html>

@@ -2,7 +2,7 @@
 
 namespace App\Exports;
 
-use App\Buku;
+use App\Models\Buku;
 use Maatwebsite\Excel\Concerns\FromCollection;
 
 class BukuExport implements FromCollection
